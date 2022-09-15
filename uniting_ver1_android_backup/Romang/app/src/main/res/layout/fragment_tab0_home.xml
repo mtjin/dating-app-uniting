@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.home.Tab0HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:background="@drawable/bg_home_main_tab_down_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tab0_tv_todayintro"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="오늘의 소개"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/home_tab0_view_todayintro_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@color/colorMainPink">
+
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tab0_tv_likehistory"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="-4dp"
+                android:textColor="@color/colorGray"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="친구 신청 히스토리"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/home_tab0_view_likehistory_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorMainPink"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/home_tab0_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_tab0_cv_closeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorOrange"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="32dp"
+            android:layout_gravity="end|bottom"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/dialog_like_iv_heart"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_add_user" />
+
+                <TextView
+                    android:id="@+id/dialog_like_tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="동네 친구"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </FrameLayout>
+</LinearLayout>

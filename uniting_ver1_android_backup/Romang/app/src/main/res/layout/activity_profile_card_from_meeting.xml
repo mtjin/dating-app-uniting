@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.evaluation.Tab2EvaluationFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--               임시로 해결함.-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.unilab.uniting.square.SquareViewPager
+                        android:id="@+id/profile_card_meeting_vp_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp">
+                    </com.unilab.uniting.square.SquareViewPager>
+
+                    <com.unilab.uniting.utils.CircleAnimIndicator
+                        android:id="@+id/profile_card_meeting_circleAnimIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp">
+
+                    </com.unilab.uniting.utils.CircleAnimIndicator>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="16dp">
+
+
+                    <TextView
+                        android:id="@+id/profile_card_tv_nickname_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="닉네임, - 세"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="12dp"
+                            android:weightSum="7">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="키"
+                                android:textColor="@color/colorGray130"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_card_tv_height"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:layout_marginStart="16dp"
+                                android:text="-  cm"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:weightSum="7">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:text="지역"
+                                android:textColor="@color/colorGray130"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profile_card_tv_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:layout_marginStart="16dp"
+                                android:text="서울"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_card_linear_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:weightSum="7">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="대학"
+                                android:textColor="@color/colorGray130"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.unilab.uniting.square.SquareImageView
+                                android:id="@+id/profile_card_iv_university_badge"
+                                android:layout_width="18dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_certification" />
+
+                            <TextView
+                                android:id="@+id/profile_card_tv_university"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:layout_marginStart="16dp"
+                                android:text="대학"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_card_linear_major"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="  전공"
+                                android:textColor="@color/colorGray130"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.unilab.uniting.square.SquareImageView
+                                android:id="@+id/profile_card_iv_major_badge"
+                                android:layout_width="18dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                app:srcCompat="@drawable/ic_certification"/>
+
+                            <TextView
+                                android:id="@+id/profile_card_tv_major"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="전공"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/profile_card_tv_evaluation_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="-8dp"
+                        android:layout_marginEnd="-8dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="닉네임님의 프로필 열람 신청을 수락하시겠습니까?"
+                        android:textColor="@color/colorGray" />
+
+                    <LinearLayout
+                        android:id="@+id/profile_card_linear_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_message"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:maxLines="3"
+                            android:background="@drawable/bg_chat_connect_guide"
+                            android:textColor="@color/colorGray" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_card_iv_message"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@mipmap/ic_launcher_round" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="32dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="소개글"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="안녕하세요."
+                            android:textColor="@color/colorBlack" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="성격"
+                            android:textColor="@color/colorGray130"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_personality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="차분한, 낙천적인, 귀여운"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="혈액형"
+                            android:textColor="@color/colorGray130"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_bloodtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A형"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="종교"
+                            android:textColor="@color/colorGray130"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_religion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="무교"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="음주"
+                            android:textColor="@color/colorGray130"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_drinking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="어느정도 즐김"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="흡연"
+                            android:textColor="@color/colorGray130"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_card_tv_smoking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="비흡연"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_card_linear_story_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="스토리"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/profile_card_linear_story0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/story0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="4dp"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardUseCompatPadding="true">
+
+                                <TextView
+                                    android:id="@+id/profile_card_tv_story0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="@string/story0"
+                                    android:textColor="@color/colorBlack" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_card_linear_story1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/story1"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="4dp"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardUseCompatPadding="true">
+
+                                <TextView
+                                    android:id="@+id/profile_card_tv_story1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="@string/story1"
+                                    android:textColor="@color/colorBlack" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_card_linear_story2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/story2"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="4dp"
+                                app:cardBackgroundColor="@color/colorWhite"
+                                app:cardUseCompatPadding="true">
+
+                                <TextView
+                                    android:id="@+id/profile_card_tv_story2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="@string/story2"
+                                    android:textColor="@color/colorBlack" />
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_card_cv_step2Apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_pink_button"
+                app:cardBackgroundColor="@color/colorMainPink"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:visibility="gone"
+                android:layout_gravity="center|bottom"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center">
+
+
+
+                    <TextView
+                        android:id="@+id/dialog_like_tv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="연락처 교환"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/profile_card_linear_btn_step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:clipToPadding="false"
+                android:background="@color/colorWhite"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/profile_card_btn_step1no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:minHeight="0dp"
+                    android:text="거절"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGray130"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_white_button" />
+
+                <Button
+                    android:id="@+id/profile_card_btn_step1ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:minHeight="0dp"
+                    android:text="수락"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_pink_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_card_linear_btn_step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:clipToPadding="false"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/profile_card_btn_step2no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:minHeight="0dp"
+                    android:text="최종 거절"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGray130"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_white_button" />
+
+                <Button
+                    android:id="@+id/profile_card_btn_step2ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:minHeight="0dp"
+                    android:text="최종 수락"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_pink_button" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/profile_card_iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_more"
+        android:layout_margin="16dp"
+        android:layout_gravity="right|top"/>
+
+    <ImageView
+        android:id="@+id/profile_card_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back"
+        android:layout_margin="16dp"
+        android:layout_gravity="left|top"/>
+
+
+
+
+
+</FrameLayout>

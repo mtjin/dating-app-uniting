@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_certification"
+        layout="@layout/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/signup_certification_linear_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="본인 인증이 완료되었습니다. \n\n 가입을 계속 진행해주세요."
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/signup_certification_btn_ok"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="285dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_pink_button2"
+                android:text="다음"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp" />
+
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/signup_certification_wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/signup_certification_linear_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"
+            android:orientation="horizontal" />
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

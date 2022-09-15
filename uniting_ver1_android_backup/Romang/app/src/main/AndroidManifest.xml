@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.unilab.uniting"
+    android:versionCode="5"
+    android:versionName="1.0.13">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".AFApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".activities.launch.tutorial.Guide2Activity"></activity>
+        <activity android:name=".activities.launch.tutorial.GuideActivity" />
+        <activity android:name=".activities.launch.tutorial.TutorialActivity" />
+        <activity android:name=".activities.launch.signup.PreviewActivity" />
+        <activity android:name=".activities.chatting.VoiceTalkActivity" />
+        <activity android:name=".activities.community.NoticeActivity" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_18ProfileEdit" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_0" />
+        <activity android:name=".activities.community.CommunityMyPostActivity" /> <!-- 페이스북 -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PhotoViewActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activities.meeting.MeetingCardActivity" /> <!-- 노티피케이션 색 설정 -->
+        <activity android:name=".activities.setprofile.SetProfile_9CustomerServiceTerms2" />
+        <activity android:name=".activities.setprofile.SetProfile_9CustomerServiceTerms" />
+        <activity android:name=".activities.setprofile.SetProfile_9CustomerServiceHelp" />
+        <activity android:name=".activities.setprofile.SetProfile_9CustomerServiceNotice" />
+        <activity android:name=".activities.setprofile.SetProfile_6AccountWithdraw" />
+        <activity android:name=".activities.setprofile.SetProfile_6AccountEmail" />
+        <activity android:name=".activities.setprofile.SetProfile_6AccountPassword" />
+        <activity android:name=".activities.setprofile.SetProfile_6AccountPhoneNumber" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_17Screening" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_16UniversityCertification" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_15Photo" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_15Photo_Guide" />
+        <activity
+            android:name=".activities.launch.login.LaunchLoginFindPwActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".activities.launch.login.LaunchLoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activities.launch.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.setprofile.SetProfile_9CustomerService" />
+        <activity android:name=".activities.setprofile.SetProfile_8Suggestion" />
+        <activity android:name=".activities.setprofile.SetProfile_7NotificationSetting" />
+        <activity android:name=".activities.setprofile.SetProfile_6Account" />
+        <activity
+            android:name=".activities.setprofile.SetProfile_5Invite"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.setprofile.SetProfile_4UniversityCertification" />
+        <activity android:name=".activities.setprofile.SetProfile_3BlockFriend" />
+        <activity
+            android:name=".activities.setprofile.SetProfile_2Edit"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_3Certification" />
+        <activity android:name=".activities.setprofile.SetProfile_1MyProfile" />
+        <activity android:name=".activities.community.CommunityWriteActivity" />
+        <activity android:name=".activities.meeting.MeetingWriteActivity" />
+        <activity android:name=".activities.meeting.MeetingApplicantListActivity" />
+        <activity android:name=".activities.notification.NotificationAlarmActivity" />
+        <activity android:name=".activities.chatting.ChattingRoomActivity" />
+        <activity android:name=".activities.chatting.ChattingConnectActivity" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_4Profile" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_2PreCertification" />
+        <activity android:name=".activities.launch.signup.LaunchSignup_1Account" />
+        <activity android:name=".activities.report.ReportWrite" />
+        <activity android:name=".activities.report.ReportActivity" />
+        <activity
+            android:name=".activities.community.CommunityFullActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.profilecard.ProfileCardMainActivity" />
+        <activity android:name=".activities.profilecard.ProfileCardChattingActivity" />
+        <activity android:name=".activities.meeting.ProfileCardMeetingActivity" />
+        <activity android:name=".activities.store.StoreMainActivity" />
+        <activity android:name=".activities.setprofile.SetProfileMainActivity" />
+        <activity android:name=".activities.MainActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.unilab.uniting.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- AppsFlyer -->
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

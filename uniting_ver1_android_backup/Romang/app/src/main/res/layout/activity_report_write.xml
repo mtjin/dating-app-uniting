@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.report.ReportWrite"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar_write_id"
+        layout="@layout/toolbar_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/report_write_tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="불쾌감을 주는 회원"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="32dp"
+                android:background="@color/colorWhite" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/report_write_et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp"
+                    android:hint="신고 내용을 입력해주세요. 신고 처리 결과를 이메일(id)로 보내드립니다."
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:gravity="top"
+                    android:background="@color/colorWhite"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardUseCompatPadding="true">
+
+
+                <TextView
+                    android:id="@+id/report_write_tv_imagerule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:hint="신고 내용을 뒷받침하는 사진을 올려주시면 신고처리에 도움이 됩니다."
+                    android:padding="24dp"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/report_write_iv_uploadimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_picture" />
+
+                <!--사진선택하면 여기다가 set할거임-->
+
+                <com.unilab.uniting.square.SquareImageView
+                    android:id="@+id/report_write_iv_setimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:scaleType="fitCenter"/>
+                
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

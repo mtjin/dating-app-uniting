@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.meeting.Tab1MeetingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_main_tab_down_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tab1_tv_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="미팅·번개·셀소"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/home_tab1_view_meeting_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@color/colorMainPink">
+
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tab1_tv_meetinghistory"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="나의 미팅·번개"
+                android:textColor="@color/colorGray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/home_tab1_view_meetinghistory_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorMainPink"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_tab1_linear_histort_tab"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/home_tab1_tv_hostmeeting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="주최한 미팅·번개"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/home_tab1_tv_matchedmetting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="신청한 미팅·번개"
+                android:textColor="@color/colorGray"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_tab1_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+</LinearLayout>

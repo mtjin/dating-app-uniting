@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_back_black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="고객센터"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@color/colorWhite"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray200"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorLightGray243"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공지사항"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도움말"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의하기"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="튜토리얼"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="visible"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorLightGray243"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이용약관"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_9customer_tv_terms2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보 취급방침"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray243"/>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.meeting.MeetingMainFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/meeting_main_swipelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:foregroundGravity="top">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:clipToPadding="false"
+            android:id="@+id/meeting_meetingmain_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" 
+            android:padding="8dp"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/meeting_tab1_cv_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorStrongPink"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="32dp"
+        android:layout_gravity="end|bottom"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                app:srcCompat="@drawable/ic_writing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:text="글쓰기"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

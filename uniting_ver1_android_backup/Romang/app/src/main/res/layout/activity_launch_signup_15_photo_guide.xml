@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_profile_id"
+        layout="@layout/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="추천하는 대표 사진 (2장 이상)"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  최대한 얼굴이 선명하게 잘 보이고, 밝게 웃는 사진을 최소한 2장 이상 올려주세요."
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl1" />
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="뚜렷한 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl2"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="내추럴할 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl4"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="환하게 웃는 모습"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl9"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="얼굴이 잘 보이는 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="추천하는 서브 사진"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  자신의 취미, 전공, 특기 등을 잘 나타내는 사진, 분위기 있는 스냅 사진, 활동적인 사진, 전신 사진 등"
+                    android:textSize="14dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl5" />
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:layout_marginBottom="8dp"
+                            android:text="운동하는 사진"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl6"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="스냅 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl7"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="취미, 전공 사진"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_good8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/good_girl8"/>
+
+                        <TextView
+                            android:id="@+id/signup_ohotoguide_tv_good8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="분위기 있는 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="금지하는 사진"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  본인인지 확인할 수 없는 사진, 타인 사진 도용, 저화질 사진, 너무 멀리서 찍은 사진, 너무 어두운 사진 등"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_bad1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bad_girl1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="얼굴이 보이지 않음"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_bad2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bad_girl2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="저화질 사진"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_ohotoguide_iv_bad3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bad_boy1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="너무 멀리서 찍은 사진"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bad_girl4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="본인 사진이 아님"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorGray130Invisible"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

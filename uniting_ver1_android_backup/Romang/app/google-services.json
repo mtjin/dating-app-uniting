@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1028162757464",
+    "firebase_url": "https://uniting-20.firebaseio.com",
+    "project_id": "uniting-20",
+    "storage_bucket": "uniting-20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028162757464:android:a15c807765e7aba144fb2d",
+        "android_client_info": {
+          "package_name": "com.unilab.uniting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028162757464-flcb9eqs9qc4gvcnjkvhgf0s4ebbb01i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRb-I7lvPxiHjenCztZCA_rFJ2lXAFaWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028162757464-flcb9eqs9qc4gvcnjkvhgf0s4ebbb01i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028162757464-7kjp6ffimf00a2nevhc571m7pf9e7b33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.UniLab.Uniting"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

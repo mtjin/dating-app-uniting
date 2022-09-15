@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorWhite"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/toolbar_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="16dp"
+                    app:srcCompat="@drawable/ic_back_black"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="대학 인증"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:background="@color/colorWhite"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLightGray200"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorLightGray243"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/signup_university16_linear_menu_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorLightGray220" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGray235"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="32dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="사진(학생증, 포털, 재학증명서)로 인증하기"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/signup_university16_imgView_arrow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:scaleType="center"
+                                app:srcCompat="@drawable/ic_chevron_right" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorLightGray220" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/signup_university16_linear_container_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@color/colorWhite"
+                        android:gravity="left"
+                        android:text="대학은 왜 인증하나요?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_guide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/colorWhite"
+                        android:lineSpacingExtra="6dp"
+                        android:text="@string/signup_certification_guide"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_guide2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@color/colorWhite"
+                        android:lineSpacingExtra="2dp"
+                        android:textStyle="bold"
+                        android:text="@string/signup_certification_guide2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="대학 (필수)"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/signup_university16_et_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/bg_signup_certification_edittext"
+                            android:hint="학교 이름을 검색하세요."
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textSize="13dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/signup_university16_rv_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="전공"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/signup_university16_et_major"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/bg_signup_certification_edittext"
+                            android:hint="전공을 입력해주세요."
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true">
+
+                        <!--사진선택하면 여기다가 set할거임-->
+
+                        <ImageView
+                            android:id="@+id/signup_university16_iv_uploadimage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_picture" />
+
+                        <com.unilab.uniting.square.SquareImageView
+                            android:id="@+id/signup_university16_iv_setimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/signup_university16_tv_screening"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorBlackInvisible"
+                            android:gravity="center"
+                            android:text="사진 심사중"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/signup_university16_btn_ok"
+                        android:layout_width="285dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/bg_pink_button2"
+                        android:text="인증하기"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signup_university16_linear_menu_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorLightGray220" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGray235"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="32dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="이메일로 인증하기"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/signup_university16_imgView_arrow2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:scaleType="center"
+                                app:srcCompat="@drawable/ic_chevron_right" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorLightGray220" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signup_university16_linear_container_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_email_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@color/colorWhite"
+                        android:gravity="left"
+                        android:text="대학은 왜 인증하나요?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_guide_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/colorWhite"
+                        android:lineSpacingExtra="6dp"
+                        android:text="@string/signup_certification_guide"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_guide_email2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@color/colorWhite"
+                        android:lineSpacingExtra="2dp"
+                        android:textStyle="bold"
+                        android:text="@string/signup_certification_guide2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="대학"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/signup_university16_et_university2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/bg_signup_certification_edittext"
+                            android:hint="학교 이름을 검색하세요."
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textSize="13dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/signup_university16_rv_university2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingVertical="8dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="이메일    "
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/colorWhite" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/signup_university16_et_sendCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:hint="대학 메일을 입력해주세요."
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/colorLightGray220" />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/signup_university16_btn_sendCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:background="@drawable/bg_orange_button"
+                            android:paddingHorizontal="6dp"
+                            android:text="인증코드 전송"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="24dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingVertical="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="인증코드"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/colorWhite" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/signup_university16_et_done"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:hint="이메일로 받은 코드를 입력해주세요."
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/colorLightGray220" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/signup_university16_btn_done_email"
+                        android:layout_width="285dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_pink_button2"
+                        android:padding="0dp"
+                        android:layout_gravity="center"
+                        android:text="인증하기"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_later"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="나중에 인증할게요."/>
+
+                    <TextView
+                        android:id="@+id/signup_university16_tv_inquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="4dp"
+                        android:text="문의 메일: help@uniting.kr"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="13dp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>
+

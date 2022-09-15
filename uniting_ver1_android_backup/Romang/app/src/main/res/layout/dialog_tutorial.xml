@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".fragments.dialog.DialogOkFragment">
+
+    <FrameLayout
+        android:layout_width="270dp"
+        android:layout_height="480dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/dialog_tutorial_vp_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"/>
+
+        <com.unilab.uniting.utils.CircleAnimIndicator
+            android:id="@+id/dialog_tutorial_circleAnimIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="-8dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/dialog_tutorial_tv_exit1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/textview_dialog_background_click"
+            android:gravity="center"
+            android:text="더 이상 보지 않기"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/colorLightGray160"/>
+
+        <TextView
+            android:id="@+id/dialog_tutorial_tv_exit2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/textview_dialog_background_click"
+            android:gravity="center"
+            android:text="닫기"/>
+
+    </LinearLayout>
+
+</LinearLayout>

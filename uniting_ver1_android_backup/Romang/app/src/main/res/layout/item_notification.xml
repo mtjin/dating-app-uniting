@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_notification_li_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/linear_layout_gray_click"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_notification_tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 님이 나를 높게 평가했습니다. 확인해보세요"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/item_notification_tv_date"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06/14 10:51"
+        android:textSize="11dp"
+        android:textColor="@color/colorGray"/>
+
+</LinearLayout>

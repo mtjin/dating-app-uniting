@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_back_black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="계정 설정"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@color/colorWhite"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray200"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorLightGray243"/>
+
+        <TextView
+            android:id="@+id/setprofile_6account_tv_changeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일 변경"
+            android:layout_marginHorizontal="16dp"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textColor="@drawable/textview_black_click"
+            android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_6account_tv_changePW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 변경"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+
+    <TextView
+        android:id="@+id/setprofile_6account_tv_changeTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화번호 변경"
+       android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_6account_tv_linkFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="페이스북 계정 연동"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorLightGray243"/>
+
+    <TextView
+        android:id="@+id/setprofile_6account_tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGray220"/>
+
+    <TextView
+        android:id="@+id/setprofile_6account_tv_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계정 휴면"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/textview_black_click"
+        android:textSize="15dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray243"/>
+
+
+</LinearLayout>

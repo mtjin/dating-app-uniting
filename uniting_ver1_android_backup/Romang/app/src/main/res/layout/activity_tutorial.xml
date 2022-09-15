@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.launch.tutorial.TutorialActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorWhite"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/toolbar_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    app:srcCompat="@drawable/ic_back_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="튜토리얼"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:background="@color/colorWhite"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLightGray200"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorLightGray243"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/tutorial_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.unilab.uniting.utils.CircleAnimIndicator
+            android:id="@+id/tutorial_circleAnimIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4dp"
+            android:gravity="center|bottom"
+            android:layout_gravity="center|bottom"/>
+
+    </FrameLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:padding="8dp"-->
+<!--        android:weightSum="2">-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tutorial_btn_close_forever"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="32dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/bg_white_button"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="튜토리얼 다시 보지 않기"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/colorGray80"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="14dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"/>&ndash;&gt;-->
+
+<!--        <Button-->
+<!--            android:id="@+id/tutorial_btn_close"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:background="@drawable/bg_white_button"-->
+<!--            android:text="닫기"-->
+<!--            android:textColor="@color/colorGray80"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_weight="2"/>-->
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

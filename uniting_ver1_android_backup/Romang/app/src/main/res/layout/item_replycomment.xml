@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_replycomment_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_replycomment_civ_profile"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="12dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_replycomment_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1회용 익명 닉네임"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_replycomment_tv_replynickname"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="[글작성자]" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_replycomment_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글내용 하하하하하"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_replycomment_tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone"
+            android:text="대댓글 달기"
+            android:textStyle="bold"
+            android:textColor="@drawable/textview_gray_click"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_replycomment_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06/14 10:51"
+            android:textColor="@color/colorGray130"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/item_replycomment_linear_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/item_replycomment_iv_recommend"
+                    android:layout_gravity="center"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    app:srcCompat="@drawable/ic_community_main_recommend_click"/>
+
+                <TextView
+                    android:id="@+id/item_replycomment_tv_recommendsum"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGray"
+                    android:textSize="13dp"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_replycomment_linear_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/item_replycomment_iv_option"
+                    android:layout_gravity="center"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_more_horiz_gray_24dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

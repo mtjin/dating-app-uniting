@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.home.Tab0HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/tab3_linear_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSubPink3"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tab3_iv_notice"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/image_empty_profile"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tab3_tv_notice_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="[공지] 유니팅 이용 안내"/>
+
+                    <TextView
+                        android:id="@+id/tab3_tv_notice_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="11dp"
+                        android:textColor="@color/colorGray130"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clipToPadding="false"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/tab3_tv_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="실험실 기능은 갑자기 추가되거나 없어질 수 있어요!"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tab3_tv_this_experiment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="·  현재 기능: 호감도 측정"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/tab3_tv_next_experiment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="·  예정 기능: 블라인드 매칭"
+                    android:textSize="12dp"/>
+
+                <ImageView
+                    android:id="@+id/tab3_iv_myProfile"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="24dp">
+
+                    <TextView
+                        android:id="@+id/tab3_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닉네임"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="호감도"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tab3_tv_tier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="호감도를 측정해보세요."
+                        android:textColor="@color/colorStrongPink"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tab3_tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:visibility="gone"
+                    android:text="진행도"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/tab3_pb_tier"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0점"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="13dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="100점"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/tab3_btn_get_tier"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_pink_button2"
+                    android:text="내 프로필 호감도 측정하기"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/tab3_tv_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:text="프로필 수정"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/textview_black_click"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_editprofile_button"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profilecard_fragment_iv_photo0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_white_button"/>
+
+
+        <com.unilab.uniting.square.SquareLayout
+            android:id="@+id/profilecard_fragment_linear_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/colorBlackBlur">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="  본인의 사진 갯수만큼 상대방의 사진을 볼 수 있습니다. 지금 사진을 올려보세요!"/>
+
+
+            <Button
+                android:id="@+id/profilecard_fragment_btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:background="@drawable/bg_pink_button2"
+                android:minHeight="0dp"
+                android:padding="8dp"
+                android:text="사진 추가하기" />
+
+        </com.unilab.uniting.square.SquareLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

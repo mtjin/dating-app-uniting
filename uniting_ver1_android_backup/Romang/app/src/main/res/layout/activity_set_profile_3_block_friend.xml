@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorWhite"
+                app:contentInsetStart="0dp">
+
+                <LinearLayout
+                    android:id="@+id/toolbar_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        app:srcCompat="@drawable/ic_back_black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="지인 차단"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorWhite"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorLightGray243"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray243"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_shield_large"/>
+
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="@string/block_guide"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/block_facebook"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/setprofile_blockFriend_tv_facebook_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block_facebook_result"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/setprofile_blockFriend_btn_updateFB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_pink_button2"
+                    android:minHeight="0dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:visibility="gone"
+                    android:text="업데이트"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/setprofile_blockFriend_switch_blockFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block_university"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/setprofile_blockFriend_tv_university_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block_university_result"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/setprofile_blockFriend_switch_blockUniversity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block_contact"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/setprofile_blockFriend_tv_contact_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block_contact_result"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/setprofile_blockFriend_btn_updatePhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pink_button2"
+                        android:text="업데이트"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:minHeight="0dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:textSize="13dp"
+                        android:layout_gravity="center"/>
+
+
+                    <Switch
+                        android:id="@+id/setprofile_blockFriend_switch_blockPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"/>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

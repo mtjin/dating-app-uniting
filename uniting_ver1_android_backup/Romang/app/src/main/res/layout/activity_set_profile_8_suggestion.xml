@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.report.ReportWrite"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar_write_id"
+        layout="@layout/toolbar_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightGray243"
+                    android:padding="16dp"
+                    android:text="@string/suggestion"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="24dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:id="@+id/setprofile_suggestion8_et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="24dp"
+                        android:hint="내용을 입력해주세요. 이메일을 적어주시면, 결과를 보내드립니다."
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:gravity="top"
+                        android:background="@color/colorWhite"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

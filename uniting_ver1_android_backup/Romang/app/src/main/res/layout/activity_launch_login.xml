@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="5"
+                android:layout_weight="1"
+                android:padding="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/uniting_title"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clipToPadding="false"
+                android:paddingTop="16dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/email_string"
+                        android:textColor="@color/colorMainPink"
+                        android:textStyle="bold" />
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/launch_login_et_email"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="3"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/input_email_for_use_id"
+                        android:textSize="12dp"
+                        app:clearIconDrawable="@color/colorMainPink"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/password_string"
+                        android:textColor="@color/colorMainPink"
+                        android:textStyle="bold" />
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/launch_login_et_password"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="3"
+                        android:hint="@string/input_eng_num_password"
+                        android:inputType="textPassword"
+                        android:textSize="12dp"
+                        app:clearIconDrawable="@color/colorMainPink" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/launch_login_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_pink_button"
+                    android:text="로그인"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/launch_login_btn_facebook_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_white_button"
+                    android:drawableStart="@drawable/ic_facebook"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="36dp"
+                    android:text="페이스북으로 로그인"
+                    android:textColor="@color/colorLightGray160"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorLightGray220" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingStart="32dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="32dp"
+                    android:paddingBottom="8dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/launch_login_btn_signup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_pink_button"
+                        android:minHeight="0dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/signup_string"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/launch_login_btn_findPW"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_pink_button"
+                        android:minHeight="0dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/find_password"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/launch_login_tv_inquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="4dp"
+                        android:text="문의 메일: help@uniting.kr"
+                        android:textColor="@color/colorGray130"
+                        android:textSize="13dp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

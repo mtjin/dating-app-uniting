@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorWhite"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/toolbar_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    app:srcCompat="@drawable/ic_back_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="비밀번호 찾기"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:background="@color/colorWhite"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLightGray200"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorLightGray243"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:text="이메일"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/launch_login_findPw_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="가입시 사용했던 이메일을 입력해주세요."
+            android:textColorHint="@color/colorLightGray160"
+            android:textSize="12dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="textEmailAddress"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/launch_login_findPw_btn_findPW"
+        android:layout_gravity="center"
+        android:layout_width="285dp"
+        android:layout_height="33dp"
+        android:background="@drawable/bg_pink_button2"
+        android:text="재설정 메일 발송"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp" />
+
+
+</LinearLayout>

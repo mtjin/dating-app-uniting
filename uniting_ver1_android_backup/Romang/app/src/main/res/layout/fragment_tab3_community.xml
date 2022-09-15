@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.home.Tab0HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:background="@drawable/bg_home_main_tab_down_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_tab3_tv_everybody"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="전체 게시판"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/community_tab3_view_everybody_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@color/colorMainPink">
+
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_tab3_tv_university"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="-4dp"
+                android:textColor="@color/colorGray"
+                android:background="@drawable/bg_menu_subpink"
+                android:gravity="center"
+                android:text="학교별 게시판"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/community_tab3_view_university_underline"
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorMainPink"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/community_tab3_linear_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSubPink3"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/community_tab3_iv_notice"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/image_empty_profile"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_tab3_tv_notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="[공지] 유니팅 이용 안내"/>
+
+            <TextView
+                android:id="@+id/community_tab3_tv_notice_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="11dp"
+                android:textColor="@color/colorGray130"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/community_tab3_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end|bottom">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/community_tab3_cv_mypost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorOrange"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="32dp"
+                android:layout_marginBottom="-16dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_bar3_document_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="내가 쓴 글"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/community_tab3_cv_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorStrongPink"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp"
+                        app:srcCompat="@drawable/ic_writing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-6dp"
+                        android:gravity="center"
+                        android:text="글쓰기"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

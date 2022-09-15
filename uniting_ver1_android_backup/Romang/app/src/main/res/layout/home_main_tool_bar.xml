@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite">
+
+
+        <LinearLayout
+            android:id="@+id/home_main_toolbar_li_profile"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home_main_toolbar_civ_profile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_settings"
+                android:background="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/home_main_toolbar_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toolbar_title"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/home_main_toolbar_iv_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uniting_title"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/home_main_toolbar_iv_heartbell"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="right|center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                app:srcCompat="@drawable/ic_diamond" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_main_toolbar_linear_ringbell"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_gravity="right|center">
+
+            <ImageView
+                android:id="@+id/home_main_toolbar_iv_ringbell"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_bell_none" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

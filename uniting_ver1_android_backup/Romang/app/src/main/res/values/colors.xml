@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#FF8C8C</color>
+    <color name="colorAccent">#FF8C8C</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorBlackInvisible">#4D000000</color>
+    <color name="colorBlackBlur">#80000000</color>
+    <color name="colorMainPink">#FF8C8C</color>
+    <color name="colorStrongPink">#FF6D7F</color>
+    <color name="colorLightPink">#FFC8C8</color>
+    <color name="colorLightPink220">#FFDCDC</color>
+    <color name="colorLightPink230">#FFE6E6</color>
+    <color name="colorSubPink">#FFF0F0</color>
+    <color name="colorSubPink2">#FFF5F5</color>
+    <color name="colorSubPink3">#FFFAFA</color>
+
+    <color name="colorClear">#00FFFFFF</color>
+    <color name="colorOrange147">#FF9300</color>
+    <color name="colorOrange173">#FFAD00</color>
+
+    <color name="colorSubPink230">#FFE6E6</color>
+    <color name="colorGray80">#505050</color>
+    <color name="colorGray130">#828282</color>
+    <color name="colorGray130Invisible">#4D828282</color>
+    <color name="colorLightGray160">#A0A0A0</color>
+    <color name="colorLightGray200">#C8C8C8</color>
+    <color name="colorLightGray220">#DCDCDC</color>
+    <color name="colorLightGray235">#EBEBEB</color>
+    <color name="colorLightGray243">#F3F3F3</color>
+    <color name="colorLightGray250">#FAFAFA</color>
+
+    <color name="colorGray">#808080</color>
+    <color name="colorLightGray">#C8C8C8</color>
+    <color name="colorOrange">#FEA900</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorPinkRed">#FA105F</color>
+
+</resources>

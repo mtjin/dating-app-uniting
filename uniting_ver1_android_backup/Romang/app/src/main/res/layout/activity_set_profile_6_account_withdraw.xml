@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorWhite"
+                app:contentInsetStart="0dp">
+
+                <LinearLayout
+                    android:id="@+id/toolbar_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        app:srcCompat="@drawable/ic_back_black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    android:text="계정 휴면"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray200"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorLightGray243"/>
+
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="휴면하시겠어요?"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/withdraw2"
+                    android:layout_marginBottom="16dp"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/setprofile_6account_btn_pause"
+                android:layout_gravity="center"
+                android:layout_width="285dp"
+                android:layout_height="33dp"
+                android:background="@drawable/bg_pink_button2"
+                android:text="계정 휴면 및 알림 끄기"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_above="@+id/setprofile_6account_tv_withdraw"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/setprofile_6account_tv_withdraw"
+                android:layout_gravity="center"
+                android:layout_width="285dp"
+                android:layout_height="33dp"
+                android:background="@color/colorWhite"
+                android:text="회원 탈퇴"
+                android:textColor="@color/colorLightGray200"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

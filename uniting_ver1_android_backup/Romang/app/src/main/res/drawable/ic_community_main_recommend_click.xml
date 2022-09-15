@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:drawable="@drawable/ic_community_main_recommend_sub"/>
+    <item android:state_focused="true" android:drawable="@drawable/ic_community_main_recommend"/>
+    <item android:drawable="@drawable/ic_community_main_recommend"/>
+
+
+</selector>

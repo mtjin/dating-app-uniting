@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_chatmessage_center_tv_nickname"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/item_chatmessage_center_tv_date"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorGray"
+        android:layout_height="wrap_content"
+        android:text="2019년 6월 1일"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/item_chatmessage_center_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="채팅 종료하기"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="0dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="48dp"
+        android:paddingStart="48dp"
+        android:background="@drawable/bg_white_button"
+        />
+</LinearLayout>

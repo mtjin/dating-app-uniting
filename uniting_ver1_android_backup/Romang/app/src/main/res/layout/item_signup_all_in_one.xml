@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/item_signup_all_in_one"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:text="예시"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar_profile_id"
+        layout="@layout/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/email_string"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/signup_account1_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_email_for_use_id"
+                        android:textColorHint="@color/colorLightGray160"
+                        android:inputType="textEmailAddress"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="비밀번호"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/signup_account1_et_pw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_eng_num_password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorLightGray160"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="비밀번호 확인"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/signup_account1_et_pwconfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_password_repeat"
+                        android:textColorHint="@color/colorLightGray160"
+                        android:inputType="textPassword"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="닉네임 (선택)"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.cielyang.android.clearableedittext.ClearableEditText
+                        android:id="@+id/signup_account1_et_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="미입력시 랜덤 닉네임이 부여됩니다."
+                        android:textColorHint="@color/colorLightGray160"
+                        android:inputType="textEmailAddress"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/signup_account1_et_ok"
+                    android:layout_gravity="center"
+                    android:layout_width="285dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_pink_button2"
+                    android:text="@string/create_account"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="32dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/view_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

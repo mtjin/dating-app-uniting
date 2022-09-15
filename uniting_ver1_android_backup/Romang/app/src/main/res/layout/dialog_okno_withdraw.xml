@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meeting_card_liv_dialog0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog_custom"
+    android:elevation="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragments.meeting.MeetingDialogStep1ApplyFragment">
+
+
+    <TextView
+        android:id="@+id/profilecard_dialog_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="탈퇴하시겠습니까?"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profilecard_dialog_tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textSize="13dp"
+        android:text=" 탈퇴를 진행하실 경우 계정의 모든 데이터와 구매하신 다이아 내역이 삭제되어 복구할 수 없습니다. 또한, 탈퇴 후 3일간 재가입이 불가능합니다. \n 계속 탈퇴 진행을 원하실 경우 아래의 빈칸에 '동의합니다'라고 적은 후 탈퇴 버튼을 눌러주세요."
+        android:textColor="@color/colorGray130" />
+
+
+    <EditText
+        android:id="@+id/dialog_withdraw_ev_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_certification_preview"
+        android:hint="동의합니다"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray130" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/profilecard_dialog_tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/textview_dialog_background_click"
+            android:text="탈퇴"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray130" />
+
+        <TextView
+            android:id="@+id/profilecard_dialog_tv_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/textview_dialog_background_click"
+            android:text="취소"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
